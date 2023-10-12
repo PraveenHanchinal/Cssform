@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>General Form</title>
+
+    <style>
+        fieldset{
+            width: 50% ; 
+            margin: 50px auto;
+            background-color: lightgreen;
+            border-radius: 15px ;
+        }
+        legend {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: brown;
+            font-size: 20px;
+            background-color: palevioletred;
+            
+        }
+
+        label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 125px;
+            display: inline-block;
+        }
+        
+        #one:hover{
+            color: blue;
+        }
+        
+        .two{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="css-submit.html">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+                <br></br>
+
+                <label for="mname">Middle Name</label>
+                <input type="text" id="mname" name="mname">
+                <br></br>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+                <br></br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <br></br>
+
+                <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob">
+                <br></br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="department" class="two">Department</label>
+            <br></br>
+
+            <input type="radio" id="cs" name="dept">
+            <label for="cs" class="two">cs</label>
+
+            <input type="radio" id="civil" name="dept">
+            <label for="civil" class="two">civil</label>
+
+            <input type="radio" id="mech" name="dept">
+            <label for="mech" class="two">mech</label>
+            <br></br>
+
+            <label for="yop">Graduated Year</label>
+            <input list="yog" id="yop" name="yop">
+
+            <datalist id="yog">
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+            </datalist>
+            <br>
+
+            <label for="">Skills</label>
+            <br>
+
+            <input type="checkbox" id="HTML" name="html">
+            <label for="html" class="two">html</label>
+
+            <input type="checkbox" id="CSS" name="css">
+            <label for="css" class="two" >css</label>
+
+            <input type="checkbox" id="java" name="java">
+            <label for="java" class="two" >java</label>
+        
+        </fieldset>
+
+       <center> <input type="submit" id="one"></center>
+    </form>
+</body>
+</html>
